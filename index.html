@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chanuzz | Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for footer icons (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <a href="#home" class="logo">Chanuzz</a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="nav-menu" class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <h1 class="hero-title">Hi, I’m <span class="accent">Chanuzz</span> — Web Developer</h1>
+        <p class="hero-subtext">I build fast, modern and responsive websites.</p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+          I’m a passionate web developer who loves turning ideas into reality. With a strong interest in both frontend aesthetics and backend logic, I craft seamless, high-performance experiences that look great on every device.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-grid">
+          <!-- Skill card -->
+          <article class="skill-card">
+            <h3>HTML</h3>
+            <div class="progress-bar"><span data-width="95"></span></div>
+          </article>
+
+          <article class="skill-card">
+            <h3>CSS</h3>
+            <div class="progress-bar"><span data-width="90"></span></div>
+          </article>
+
+          <article class="skill-card">
+            <h3>JavaScript</h3>
+            <div class="progress-bar"><span data-width="85"></span></div>
+          </article>
+
+          <article class="skill-card">
+            <h3>UI/UX Basics</h3>
+            <div class="progress-bar"><span data-width="75"></span></div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Responsive Design</h3>
+            <div class="progress-bar"><span data-width="90"></span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <h3>Portfolio v1</h3>
+            <p>My first responsive portfolio built with pure HTML/CSS/JS.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-small" target="_blank">Demo</a>
+              <a href="#" class="btn btn-small btn-outline" target="_blank">GitHub</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <h3>Task Manager App</h3>
+            <p>A simple to-do list app using localStorage for persistence.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-small" target="_blank">Demo</a>
+              <a href="#" class="btn btn-small btn-outline" target="_blank">GitHub</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <h3>Weather Dashboard</h3>
+            <p>Displays real-time weather data via a public API.</p>
+            <div class="project-links">
+              <a href="#" class="btn btn-small" target="_blank">Demo</a>
+              <a href="#" class="btn btn-small btn-outline" target="_blank">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <small class="error" aria-live="polite"></small>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Chanuzz. All Rights Reserved</p>
+
+      <div class="socials">
+        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://t.me" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+        <a href="mailto:chanuzz@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
